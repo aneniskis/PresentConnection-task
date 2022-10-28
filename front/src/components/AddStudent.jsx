@@ -24,7 +24,7 @@ export const AddStudent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCreateStudent(student);
+    if (student.email) setCreateStudent(student);
     setStudent({
       name: "",
       surname: "",
@@ -46,6 +46,8 @@ export const AddStudent = () => {
             <input
               id="name"
               type="text"
+              minLength={3}
+              maxLength={15}
               value={student.name}
               onChange={handleChange}
               required
@@ -56,6 +58,8 @@ export const AddStudent = () => {
             <input
               id="surname"
               type="text"
+              minLength={3}
+              maxLength={15}
               value={student.surname}
               onChange={handleChange}
               required
@@ -68,6 +72,8 @@ export const AddStudent = () => {
             <input
               id="email"
               type="email"
+              minLength={8}
+              maxLength={25}
               value={student.email}
               onChange={handleChange}
               required
@@ -78,6 +84,8 @@ export const AddStudent = () => {
             <input
               id="city"
               type="text"
+              minLength={3}
+              maxLength={15}
               value={student.city}
               onChange={handleChange}
               required

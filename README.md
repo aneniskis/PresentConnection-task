@@ -1,7 +1,7 @@
 # presentConnection
 
  - Front side - on [Netlify]([https://pctask.netlify.app/])
- - Server side - MongoDb on [Heroku]
+ - Server side - MongoDb on [Heroku]([https://pctask.herokuapp.com/])
 
 ## Project features
 

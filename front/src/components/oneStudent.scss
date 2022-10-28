@@ -1,0 +1,87 @@
+.card {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  border-radius: 20px;
+  position: relative;
+
+  &__top {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+  }
+  &__bottom {
+    width: 100%;
+    // margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #111;
+    border-radius: 0 0 20px 20px;
+  }
+  &__img {
+    position: absolute;
+    top: 45px;
+    height: 100px;
+    width: 100px;
+  }
+  &__person {
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      pad: 5px;
+    }
+  }
+  &__details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    span {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      gap: 5px;
+    }
+  }
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+  &__back {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    width: 60px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #111;
+    border-radius: 8px;
+    height: 25px;
+    cursor: pointer;
+  }
+  &__back:hover {
+    transition: all 0.2s;
+    background-color: black;
+    color: #fff;
+    border: none;
+  }
+}
